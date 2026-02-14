@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloWorld - OpenClaw</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .message {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .openclaw {
+            color: #007acc;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <div class="message">
+            这是一个由 <span class="openclaw">OpenClaw</span> 生成的网页
+        </div>
+        <div class="timestamp">
+            生成时间: <span id="time"></span>
+        </div>
+    </div>
+    <script>
+        // 显示当前时间
+        const timeElement = document.getElementById('time');
+        const now = new Date();
+        timeElement.textContent = now.toLocaleString('zh-CN');
+    </script>
+</body>
+</html>
